@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sort.bubblesort.BubbleSortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-05T21:35:21" hostname="RAIKA-PC" time="0.055">
-  <properties/>
-  <testcase name="Sort Array with Bubble Sort" classname="sort.bubblesort.BubbleSortTest" time="0.055"/>
-  <system-out><![CDATA[sortArray: 5 1 0 7 4 2 3 8 9 6
-sortArray: 0 1 2 3 4 5 6 7 8 9
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
