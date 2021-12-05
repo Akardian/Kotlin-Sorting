@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sort.ArrayGeneratorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-12-05T21:35:50" hostname="RAIKA-PC" time="0.079">
+  <properties/>
+  <testcase name="Swap 2 integers" classname="sort.ArrayGeneratorTest" time="0.061"/>
+  <testcase name="Create Array with 50 entry's" classname="sort.ArrayGeneratorTest" time="0.003"/>
+  <testcase name="Create empty Array" classname="sort.ArrayGeneratorTest" time="0.001"/>
+  <testcase name="Compare 2 shuffled Arrays" classname="sort.ArrayGeneratorTest" time="0.006"/>
+  <testcase name="Check Array Sum Values" classname="sort.ArrayGeneratorTest" time="0.001"/>
+  <system-out><![CDATA[swapArray: 2 1
+swapArray: 1 2
+createArray: 50
+createEmpty: 0
+compareArray: 5 1 0 7 4 2 3 8 9 6
+compareArray: 5 1 0 7 4 2 3 8 9 6
+checkArraySum: 45
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
