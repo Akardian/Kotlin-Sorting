@@ -3,17 +3,19 @@
  */
 package sort.bubblesort
 
-import sort.ArrayGenerator
+import sort.Sort
 
-class BubbleSort(_size: Int = 0, _seed: Int = -1) : ArrayGenerator(_size, _seed) {
+abstract class BubbleSort<T> : Sort<T> {
+
+    constructor(_array: Array<T>) : super(_array){ }
 
     override fun sort() {
         var length = size //array length
         do {
             var newLength = 0
             for (index in 1 until length) {
-                if(array[index - 1] > array[index]) {
-                    swapLong(array, firstIndex = index - 1, secondIndex = index)
+                if(compare(array[index - 1], array[index]) > 0 ) {
+                    swap(array, firstIndex = index - 1, secondIndex = index)
                     newLength = index //Set last changed index as new length
                 }
             }

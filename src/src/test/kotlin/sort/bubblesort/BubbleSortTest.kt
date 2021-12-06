@@ -7,15 +7,47 @@ import org.junit.jupiter.api.Test
 
 internal class BubbleSortTest {
 
+    private val defaultArray = arrayOf(0,1,2,3,4,5,6,7,8,9)
+
     @Test
     @DisplayName("Sort Array with Bubble Sort")
-    fun sortArray() {
-        val array = BubbleSort(_size = 10, _seed = 12345)
+    fun sortArrayRandom() {
+        val array = BubbleSortInt(defaultArray)
+        array.shuffle(seed = 12345)
+
         println("sortArray: " + array.print())
 
         array.sort()
         println("sortArray: " + array.print())
 
-        assertArrayEquals(array.array, longArrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+        assertArrayEquals(array.array, arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+    }
+
+    @Test
+    @DisplayName("Sort Array with Bubble Sort and Equal numbers")
+    fun sortArraySame() {
+        val array = BubbleSortInt(defaultArray)
+        array.shuffle(seed = 12345)
+
+        println("sortArray: " + array.print())
+
+        array.sort()
+        println("sortArray: " + array.print())
+
+        assertArrayEquals(array.array, arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+    }
+
+    @Test
+    @DisplayName("Sort Array with Bubble Sort")
+    fun sortArray() {
+        val array = BubbleSortInt(defaultArray)
+        array.shuffle(seed = 12345)
+
+        println("sortArray: " + array.print())
+
+        array.sort()
+        println("sortArray: " + array.print())
+
+        assertArrayEquals(array.array, arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
     }
 }
