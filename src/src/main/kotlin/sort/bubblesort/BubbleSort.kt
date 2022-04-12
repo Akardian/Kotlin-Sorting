@@ -15,7 +15,8 @@ abstract class BubbleSort<T> : Sort<T> {
             var newLength = 0
             for (index in 1 until length) {
                 if(compare(array[index - 1], array[index]) > 0 ) {
-                    swap(array, firstIndex = index - 1, secondIndex = index)
+                    //Swap Element if compare is smaller
+                    swap(firstIndex = index - 1, secondIndex = index)
                     newLength = index //Set last changed index as new length
                 }
             }

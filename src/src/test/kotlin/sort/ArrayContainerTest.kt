@@ -61,7 +61,7 @@ internal class ArrayContainerTest {
         val test = BubbleSortInt(defaultArray)
         test.shuffle(seed = 123456)
 
-        test.swap(array, firstIndex = 0, secondIndex = 1)
+        test.swap(firstIndex = 0, secondIndex = 1)
 
         println("swapArray: " + array[0] + " " + array[1])
         assertArrayEquals(array, arrayOf(1, 2))

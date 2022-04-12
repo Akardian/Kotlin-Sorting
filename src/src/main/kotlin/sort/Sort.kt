@@ -14,7 +14,7 @@ abstract class Sort<T> : ArrayContainer<T>, Comparator<T> {
     /**
      * Swap 2 values in place
      */
-    fun swap(array : Array<T>, firstIndex: Int, secondIndex: Int) {
+    fun swap(firstIndex: Int, secondIndex: Int) {
         val temp = array[firstIndex]
         array[firstIndex] = array[secondIndex]
         array[secondIndex]  = temp
