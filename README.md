@@ -1,2 +1,5 @@
 # Kotlin-Sorting
-This repository contains sorting algorithm 
+
+Included are
+  - bublesort
+  - quicksort-lomuto
